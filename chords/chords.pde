@@ -49,9 +49,9 @@ void draw() {
     double beta = alpha + random(1,5);
     drawChords(alpha, beta,d3/2,cx3,cy3);
   }
-
+  
+  saveFrame("render/out.png");
 }
-
 
 void drawChords(double alpha, double beta, double radius, int x0, int y0){
   double x1 = radius * Math.cos(alpha);
